@@ -1,0 +1,161 @@
+const booksContainer =
+    document.getElementById("booksContainer");
+
+const bookCount =
+    document.getElementById("bookCount");
+
+
+const savedIssue =
+    localStorage.getItem("lumoraIssue");
+
+
+if (!savedIssue) {
+
+    bookCount.textContent = "0";
+
+    booksContainer.innerHTML = `
+        <div class="empty-state">
+
+            <div class="empty-icon">
+                L
+            </div>
+
+            <h2>
+                Your reading shelf is empty.
+            </h2>
+
+            <p>
+                You haven't issued any books yet.
+                Explore the Lumora library and find
+                something worth reading.
+            </p>
+
+            <a
+                href="explore.html"
+                class="explore-btn"
+            >
+                Explore Library →
+            </a>
+
+        </div>
+    `;
+
+} else {
+
+    const issue =
+        JSON.parse(savedIssue);
+
+    bookCount.textContent = "1";
+
+
+    booksContainer.innerHTML = `
+
+        <article class="book-card">
+
+            <div class="book-cover">
+
+                <div class="book-cover-content">
+
+                    <div class="cover-small">
+                        LUMORA LIBRARY
+                    </div>
+
+                    <h2>
+                        ${issue.bookTitle}
+                    </h2>
+
+                    <p>
+                        ${issue.author}
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-main-info">
+
+                <span class="book-status">
+
+                    <span class="status-dot"></span>
+
+                    CURRENTLY READING
+
+                </span>
+
+
+                <h2>
+                    ${issue.bookTitle}
+                </h2>
+
+                <p class="book-author">
+                    by ${issue.author}
+                </p>
+
+
+                <div class="book-meta">
+
+                    <div class="meta-item">
+
+                        <span>
+                            ISSUED
+                        </span>
+
+                        <strong>
+                            ${issue.issueDate}
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-item">
+
+                        <span>
+                            RETURN BY
+                        </span>
+
+                        <strong>
+                            ${issue.returnDate}
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-item">
+
+                        <span>
+                            CATEGORY
+                        </span>
+
+                        <strong>
+                            ${issue.category}
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-actions">
+
+                <a
+                    href="read-book.html?issueId=${issue.id}"
+                    class="action-btn read-btn"
+                >
+                    Continue Reading
+                </a>
+
+                <a
+                    href="return-book.html?issueId=${issue.id}"
+                    class="action-btn return-btn"
+                >
+                    Return Book
+                </a>
+
+            </div>
+
+        </article>
+    `;
+}

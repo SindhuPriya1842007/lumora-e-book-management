@@ -1,0 +1,390 @@
+/* =========================
+   LIBRARY HERO
+========================= */
+
+.library-hero {
+    padding: 110px 8% 80px;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(183, 145, 72, 0.14), transparent 30%),
+        #f7f2e9;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #a47b36;
+}
+
+.library-hero h1 {
+    margin: 18px 0;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1;
+    color: #24211d;
+}
+
+.library-hero h1 span {
+    display: block;
+    font-style: italic;
+    color: #a47b36;
+}
+
+.library-hero p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #706b63;
+}
+
+
+/* =========================
+   LIBRARY AREA
+========================= */
+
+.library-container {
+    padding: 70px 8%;
+    background: #fcfaf6;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.search-box {
+    width: min(700px, 100%);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 17px 22px;
+
+    border: 1px solid #e4ddd1;
+    border-radius: 50px;
+
+    background: white;
+
+    box-shadow: 0 10px 35px rgba(50, 42, 30, 0.06);
+}
+
+.search-box span {
+    font-size: 25px;
+    color: #a47b36;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+
+    color: #292620;
+}
+
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+.category-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.category-btn {
+    border: 1px solid #ddd5c7;
+    background: white;
+
+    padding: 11px 20px;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+
+    color: #686157;
+
+    transition: 0.25s;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #28251f;
+    color: white;
+    border-color: #28251f;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.library-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 30px;
+}
+
+.library-heading h2 {
+    margin-top: 8px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+
+    color: #29251f;
+}
+
+#bookCount {
+    color: #8b8377;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BOOK GRID
+========================= */
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* =========================
+   BOOK CARD
+========================= */
+
+.book-card {
+    background: white;
+
+    border: 1px solid #ebe4d8;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 30px rgba(50, 42, 30, 0.04);
+}
+
+.book-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(50, 42, 30, 0.11);
+}
+
+
+/* =========================
+   BOOK COVER
+========================= */
+
+.book-cover {
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px;
+
+    background:
+        linear-gradient(135deg, #2d2a25, #5d5140);
+
+    position: relative;
+}
+
+.book-cover::after {
+    content: "";
+    position: absolute;
+
+    width: 130px;
+    height: 180px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.book-cover-content {
+    position: relative;
+    z-index: 2;
+
+    width: 150px;
+    min-height: 190px;
+
+    padding: 25px 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #f4ead9;
+
+    box-shadow: 12px 15px 25px rgba(0,0,0,0.25);
+}
+
+.book-cover-title {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #29251f;
+}
+
+.book-cover-author {
+    font-size: 10px;
+    color: #756c60;
+}
+
+
+/* =========================
+   BOOK INFO
+========================= */
+
+.book-info {
+    padding: 25px;
+}
+
+.book-category {
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    color: #aa803c;
+}
+
+.book-title {
+    margin: 8px 0 5px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 24px;
+
+    color: #29251f;
+}
+
+.book-author {
+    color: #777067;
+    font-size: 14px;
+}
+
+.book-bottom {
+    margin-top: 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.availability {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.available {
+    color: #4c8060;
+}
+
+.unavailable {
+    color: #a05252;
+}
+
+.view-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    width: 100%;
+
+    padding: 13px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    background: #28251f;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.view-btn:hover {
+    background: #a47b36;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 80px;
+
+    color: #857d71;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .library-hero {
+        padding: 80px 6%;
+    }
+
+    .library-container {
+        padding: 50px 6%;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .library-heading {
+        align-items: start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+}

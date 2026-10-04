@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Returns & Fines | Lumora Admin</title>
+  <link rel="stylesheet" href="css/admin-returns.css">
+</head>
+<body>
+
+<aside class="sidebar">
+
+  <div class="logo">
+    <span>L</span> Lumora
+  </div>
+
+  <nav>
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="admin-books.html">Manage Books</a>
+    <a href="admin-users.html">Users</a>
+    <a href="admin-issued.html">Issued Books</a>
+    <a class="active" href="admin-returns.html">Returns & Fines</a>
+  </nav>
+
+  <button id="logoutBtn">Logout</button>
+
+</aside>
+
+<main class="main">
+
+  <header>
+    <p class="eyebrow">RETURN MANAGEMENT</p>
+    <h1>Returns & Fines</h1>
+    <p>Monitor returned books and calculate overdue charges.</p>
+  </header>
+
+  <section class="stats">
+
+    <div class="stat">
+      <span>Returned Books</span>
+      <strong id="returnedCount">0</strong>
+    </div>
+
+    <div class="stat">
+      <span>Overdue Books</span>
+      <strong id="overdueCount">0</strong>
+    </div>
+
+    <div class="stat">
+      <span>Total Fine</span>
+      <strong id="totalFine">₹0</strong>
+    </div>
+
+  </section>
+
+  <section class="panel">
+
+    <div class="toolbar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search student or book..."
+      >
+
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="returned">Returned</option>
+        <option value="overdue">Overdue</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Book</th>
+            <th>Due Date</th>
+            <th>Returned Date</th>
+            <th>Late Days</th>
+            <th>Fine</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="returnsTable"></tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/admin-returns.js"></script>
+</body>
+</html>

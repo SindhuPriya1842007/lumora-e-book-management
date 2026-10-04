@@ -1,0 +1,298 @@
+.access-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(164, 123, 54, 0.13),
+            transparent 35%
+        ),
+        #fcfaf6;
+}
+
+
+.access-card {
+
+    width: min(680px, 100%);
+
+    padding: 55px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e7dfd2;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 30px 80px rgba(45, 38, 28, 0.09);
+}
+
+
+/* SUCCESS ICON */
+
+.success-icon {
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #292720;
+
+    color: #d9bd83;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.access-card h1 {
+
+    margin: 15px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 65px);
+
+    line-height: 1;
+
+    color: #29251f;
+}
+
+
+.access-card h1 span {
+
+    display: block;
+
+    color: #a47b36;
+
+    font-style: italic;
+}
+
+
+.access-description {
+
+    max-width: 500px;
+
+    margin: 0 auto 30px;
+
+    color: #777066;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* BOOK */
+
+.issued-book {
+
+    padding: 25px;
+
+    margin: 30px 0;
+
+    border-radius: 15px;
+
+    background: #f7f2e9;
+
+    text-align: left;
+}
+
+
+.issued-label {
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #a47b36;
+}
+
+
+.issued-title {
+
+    margin-top: 8px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    color: #29251f;
+}
+
+
+.issued-author {
+
+    margin-top: 5px;
+
+    color: #777066;
+
+    font-size: 13px;
+}
+
+
+.issue-dates {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #ded5c7;
+}
+
+
+.date-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.date-label {
+
+    font-size: 10px;
+
+    color: #8d857a;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.date-value {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #3c3831;
+}
+
+
+/* BUTTONS */
+
+.access-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    flex: 1;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.25s;
+}
+
+
+.primary-btn {
+
+    background: #292720;
+
+    color: white;
+}
+
+
+.primary-btn:hover {
+
+    background: #a47b36;
+}
+
+
+.secondary-btn {
+
+    border: 1px solid #dcd3c5;
+
+    color: #49443c;
+
+    background: white;
+}
+
+
+.secondary-btn:hover {
+
+    border-color: #a47b36;
+
+    color: #a47b36;
+}
+
+
+.library-link {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    color: #777066;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+.library-link:hover {
+
+    color: #a47b36;
+}
+
+
+@media (max-width: 550px) {
+
+    .access-card {
+
+        padding: 35px 22px;
+    }
+
+    .access-actions {
+
+        flex-direction: column;
+    }
+
+}

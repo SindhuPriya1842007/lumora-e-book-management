@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Issue Book | Lumora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/issue.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">L</span>
+
+            <span>Lumora</span>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="explore.html">Explore</a>
+
+            <a href="#">Categories</a>
+
+            <a href="#">About</a>
+
+        </div>
+
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="login-link">
+                Login
+            </a>
+
+            <a href="register.html" class="nav-btn">
+                Get Started
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- PAGE -->
+
+    <main class="issue-page">
+
+
+        <div class="issue-header">
+
+            <span class="eyebrow">
+                LIBRARY REQUEST
+            </span>
+
+            <h1>
+                Issue your
+                <span>e-book.</span>
+            </h1>
+
+            <p>
+                Fill in your details to request access
+                to this book from the Lumora library.
+            </p>
+
+        </div>
+
+
+
+        <div class="issue-layout">
+
+
+            <!-- BOOK SUMMARY -->
+
+            <aside class="book-summary">
+
+                <div id="bookSummary">
+
+                    Loading book...
+
+                </div>
+
+            </aside>
+
+
+
+            <!-- FORM -->
+
+            <section class="issue-form-card">
+
+
+                <div class="form-heading">
+
+                    <span class="step">
+                        STEP 01
+                    </span>
+
+                    <h2>
+                        Issue details
+                    </h2>
+
+                    <p>
+                        Enter the information below.
+                    </p>
+
+                </div>
+
+
+
+                <form id="issueForm">
+
+
+                    <!-- STUDENT -->
+
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- REGISTRATION -->
+
+                    <div class="form-group">
+
+                        <label for="registrationNo">
+                            Registration Number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registrationNo"
+                            placeholder="Enter your registration number"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- DATES -->
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="issueDate">
+                                Issue Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="issueDate"
+                                required
+                            >
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <label for="returnDate">
+                                Return Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="returnDate"
+                                required
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- COMMENTS -->
+
+                    <div class="form-group">
+
+                        <label for="comments">
+                            Comments
+                            <span>(optional)</span>
+                        </label>
+
+                        <textarea
+                            id="comments"
+                            rows="4"
+                            placeholder="Any additional information..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- TERMS -->
+
+                    <label class="checkbox-row">
+
+                        <input
+                            type="checkbox"
+                            id="agree"
+                            required
+                        >
+
+                        <span>
+                            I confirm that the information provided
+                            is correct and I agree to return the
+                            e-book within the selected period.
+                        </span>
+
+                    </label>
+
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="submit-btn"
+                    >
+
+                        Continue to verification
+
+                        <span>→</span>
+
+                    </button>
+
+
+                </form>
+
+
+                <div
+                    id="message"
+                    class="form-message"
+                ></div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <script src="js/issue.js"></script>
+
+</body>
+
+</html>

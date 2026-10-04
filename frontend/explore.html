@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore — Lumora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">L</span>
+                <span>Lumora</span>
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html" class="active">Explore</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="search-btn">⌕</button>
+
+            <a href="login.html" class="login-link">
+                Log in
+            </a>
+
+            <a href="register.html" class="signup-btn">
+                Get Started
+            </a>
+
+        </div>
+
+        <button class="menu-btn">☰</button>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <section class="section explore-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        DIGITAL LIBRARY
+                    </span>
+
+                    <h1>
+                        Explore our books
+                    </h1>
+
+                    <p>
+                        Discover books by title, author or category.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box explore-search">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by title, author or genre..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="filters">
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Fiction">
+                        Fiction
+                    </option>
+
+                    <option value="Technology">
+                        Technology
+                    </option>
+
+                    <option value="Science">
+                        Science
+                    </option>
+
+                    <option value="Biography">
+                        Biography
+                    </option>
+
+                    <option value="History">
+                        History
+                    </option>
+
+                    <option value="Finance">
+                        Finance
+                    </option>
+
+                    <option value="Self Growth">
+                        Self Growth
+                    </option>
+
+                </select>
+
+
+                <select id="availabilityFilter">
+
+                    <option value="all">
+                        All Books
+                    </option>
+
+                    <option value="available">
+                        Available
+                    </option>
+
+                    <option value="unavailable">
+                        Currently Unavailable
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- BOOK COUNT -->
+
+            <div class="explore-header">
+
+                <span id="bookCount">
+                    Loading books...
+                </span>
+
+            </div>
+
+
+            <!-- BOOKS -->
+
+            <div
+                class="books-grid"
+                id="booksGrid"
+            >
+
+                <article class="book-card">
+
+                    <div class="card-cover cover-one">
+
+                        <span>LUMORA</span>
+
+                        <h3>
+                            Loading<br>
+                            Books...
+                        </h3>
+
+                        <small>
+                            PLEASE WAIT
+                        </small>
+
+                    </div>
+
+                    <div class="book-info">
+
+                        <div>
+
+                            <h3>
+                                Loading...
+                            </h3>
+
+                            <p>
+                                Connecting to library
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                id="noResults"
+                style="display:none;"
+            >
+
+                <h3>
+                    No books found
+                </h3>
+
+                <p>
+                    Try another title, author or category.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span class="logo-icon">L</span>
+            Lumora
+
+        </div>
+
+        <p>
+            Your digital library, everywhere.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="about.html">Contact</a>
+
+        </div>
+
+        <span class="copyright">
+            © 2026 Lumora
+        </span>
+
+    </footer>
+
+
+    <script src="js/explore.js"></script>
+
+</body>
+
+</html>

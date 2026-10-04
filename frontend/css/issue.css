@@ -1,0 +1,423 @@
+.issue-page {
+    min-height: 100vh;
+
+    padding: 110px 8% 90px;
+
+    background: #fcfaf6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.issue-header {
+    max-width: 750px;
+
+    margin-bottom: 60px;
+}
+
+.issue-header h1 {
+    margin: 16px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(48px, 6vw, 70px);
+
+    line-height: 1;
+
+    color: #29251f;
+}
+
+.issue-header h1 span {
+    color: #a47b36;
+
+    font-style: italic;
+}
+
+.issue-header p {
+    max-width: 600px;
+
+    color: #777066;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.issue-layout {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 0.75fr 1.25fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   BOOK SUMMARY
+========================= */
+
+.book-summary {
+
+    position: sticky;
+
+    top: 110px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #292720;
+
+    color: white;
+
+    min-height: 300px;
+}
+
+.summary-label {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #c5a66d;
+
+    font-weight: 700;
+}
+
+.summary-title {
+
+    margin-top: 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    line-height: 1.1;
+}
+
+.summary-author {
+
+    margin-top: 8px;
+
+    color: #c2bbb0;
+
+    font-size: 14px;
+}
+
+.summary-category {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 7px 12px;
+
+    border: 1px solid #665e51;
+
+    border-radius: 20px;
+
+    color: #d5c3a3;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.summary-availability {
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #4b463d;
+
+    font-size: 13px;
+
+    color: #bdb6aa;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.issue-form-card {
+
+    padding: 42px;
+
+    border: 1px solid #e7dfd2;
+
+    border-radius: 20px;
+
+    background: white;
+
+    box-shadow:
+        0 20px 50px rgba(50, 42, 30, 0.06);
+}
+
+.step {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #a47b36;
+}
+
+.form-heading h2 {
+
+    margin: 8px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    color: #29251f;
+}
+
+.form-heading p {
+
+    margin-bottom: 35px;
+
+    color: #81786d;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+
+    margin-bottom: 22px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #403b34;
+}
+
+.form-group label span {
+
+    font-weight: 400;
+
+    color: #aaa298;
+}
+
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd5c8;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #fdfcf9;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    color: #29251f;
+
+    transition: 0.2s;
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color: #a47b36;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 3px rgba(164, 123, 54, 0.08);
+}
+
+
+/* =========================
+   DATE ROW
+========================= */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkbox-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: flex-start;
+
+    margin: 25px 0;
+
+    color: #71695f;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    cursor: pointer;
+}
+
+.checkbox-row input {
+
+    margin-top: 3px;
+
+    accent-color: #a47b36;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.submit-btn {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #292720;
+
+    color: white;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.submit-btn span {
+
+    margin-left: 8px;
+
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+
+    background: #a47b36;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.form-message {
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+.form-message.error {
+
+    color: #a05252;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .issue-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .book-summary {
+
+        position: static;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .issue-page {
+
+        padding: 80px 6%;
+    }
+
+    .issue-form-card {
+
+        padding: 25px;
+    }
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,245 @@
+.otp-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 10%,
+            rgba(164, 123, 54, 0.12),
+            transparent 35%
+        ),
+        #fcfaf6;
+}
+
+
+.otp-card {
+
+    width: min(500px, 100%);
+
+    padding: 50px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e7dfd2;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 70px rgba(45, 38, 28, 0.08);
+}
+
+
+.verification-icon {
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #f0eadf;
+
+    color: #a47b36;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+
+.otp-card h1 {
+
+    margin: 15px 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    color: #29251f;
+}
+
+
+.otp-card h1 span {
+
+    display: block;
+
+    color: #a47b36;
+
+    font-style: italic;
+}
+
+
+.otp-description {
+
+    color: #7b746a;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* DEMO OTP */
+
+.demo-otp {
+
+    margin: 20px 0 30px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #f5f0e7;
+
+    color: #8c682f;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    letter-spacing: 6px;
+}
+
+
+#otpForm {
+
+    text-align: left;
+}
+
+
+#otpForm label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #403b34;
+}
+
+
+#otp {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 16px;
+
+    text-align: center;
+
+    border: 1px solid #ddd5c8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 22px;
+
+    letter-spacing: 7px;
+}
+
+
+#otp:focus {
+
+    border-color: #a47b36;
+
+    box-shadow:
+        0 0 0 3px rgba(164, 123, 54, 0.08);
+}
+
+
+.verify-btn {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #292720;
+
+    color: white;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.verify-btn:hover {
+
+    background: #a47b36;
+}
+
+
+.otp-message {
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    color: #a05252;
+}
+
+
+.cancel-link {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #777066;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+.cancel-link:hover {
+
+    color: #a47b36;
+}
+
+
+@media (max-width: 550px) {
+
+    .otp-card {
+
+        padding: 35px 25px;
+    }
+
+}

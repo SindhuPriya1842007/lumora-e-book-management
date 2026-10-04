@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Access Granted | Lumora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/access.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">L</span>
+            <span>Lumora</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="explore.html" class="login-link">
+                Library
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ACCESS PAGE -->
+
+    <main class="access-page">
+
+        <section class="access-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="eyebrow">
+                ACCESS CONFIRMED
+            </span>
+
+            <h1>
+                Your book is
+                <span>ready.</span>
+            </h1>
+
+            <p class="access-description">
+                Your identity has been verified and the
+                e-book has been successfully issued to you.
+            </p>
+
+
+            <!-- BOOK INFORMATION -->
+
+            <div
+                id="issuedBook"
+                class="issued-book"
+            >
+
+                Loading book details...
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="access-actions">
+
+                <a
+                    href="#"
+                    id="readBtn"
+                    class="primary-btn"
+                >
+                    Read e-book →
+                </a>
+
+                <a
+                    href="#"
+                    id="downloadBtn"
+                    class="secondary-btn"
+                    download
+                >
+                    Download e-book
+                </a>
+
+            </div>
+
+
+            <a
+                href="explore.html"
+                class="library-link"
+            >
+                ← Continue exploring the library
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/access.js"></script>
+
+</body>
+
+</html>

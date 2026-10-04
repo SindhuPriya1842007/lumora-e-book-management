@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Return Book | Lumora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/return-book.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="return-navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">L</span>
+            <span>Lumora</span>
+        </a>
+
+        <a href="explore.html" class="back-link">
+            ← Back to Library
+        </a>
+
+    </nav>
+
+
+    <!-- MAIN -->
+
+    <main class="return-page">
+
+        <div class="return-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="eyebrow">
+                BOOK RETURN
+            </span>
+
+            <h1>
+                Ready to return?
+            </h1>
+
+            <p class="intro">
+                Review your book details before completing the return.
+            </p>
+
+
+            <!-- BOOK DETAILS -->
+
+            <div class="book-summary">
+
+                <div class="mini-cover">
+                    <span>L</span>
+                </div>
+
+                <div class="book-info">
+
+                    <span class="book-label">
+                        E-BOOK
+                    </span>
+
+                    <h2 id="bookTitle">
+                        Loading...
+                    </h2>
+
+                    <p id="bookAuthor">
+                        Please wait
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATES -->
+
+            <div class="date-grid">
+
+                <div class="date-box">
+
+                    <span>
+                        ISSUED ON
+                    </span>
+
+                    <strong id="issueDate">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="date-box">
+
+                    <span>
+                        RETURN BY
+                    </span>
+
+                    <strong id="returnDate">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="date-box">
+
+                    <span>
+                        RETURNING ON
+                    </span>
+
+                    <strong id="todayDate">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- FINE -->
+
+            <div class="fine-box">
+
+                <div>
+
+                    <span class="fine-label">
+                        LATE RETURN FINE
+                    </span>
+
+                    <h3 id="fineAmount">
+                        ₹0
+                    </h3>
+
+                </div>
+
+                <div class="fine-info" id="fineMessage">
+                    Returned on time
+                </div>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div id="returnMessage" class="return-message"></div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="return-actions">
+
+                <a href="read-book.html" class="cancel-btn">
+                    Continue Reading
+                </a>
+
+                <button id="confirmReturn" class="confirm-btn">
+                    Confirm Return →
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/return-book.js"></script>
+
+</body>
+
+</html>

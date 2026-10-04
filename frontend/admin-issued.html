@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issued Books | Lumora Admin</title>
+  <link rel="stylesheet" href="css/admin-issued.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="logo"><span>L</span> Lumora</div>
+
+  <nav>
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="admin-books.html">Manage Books</a>
+    <a href="admin-users.html">Users</a>
+    <a class="active" href="admin-issued.html">Issued Books</a>
+    <a href="admin-returns.html">Returns & Fines</a>
+  </nav>
+
+  <button id="logoutBtn">Logout</button>
+</aside>
+
+<main class="main">
+
+  <header>
+    <div>
+      <p class="eyebrow">LIBRARY CONTROL</p>
+      <h1>Issued Books</h1>
+      <p>Track every book currently issued to readers.</p>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="stat">
+      <span>Total Issued</span>
+      <strong id="totalIssued">0</strong>
+    </div>
+
+    <div class="stat">
+      <span>Active</span>
+      <strong id="activeIssued">0</strong>
+    </div>
+
+    <div class="stat">
+      <span>Pending OTP</span>
+      <strong id="pendingIssued">0</strong>
+    </div>
+
+    <div class="stat">
+      <span>Overdue</span>
+      <strong id="overdueIssued">0</strong>
+    </div>
+  </section>
+
+  <section class="panel">
+
+    <div class="toolbar">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search student, registration no. or book..."
+      >
+
+      <select id="statusFilter">
+        <option value="all">All Status</option>
+        <option value="active">Active</option>
+        <option value="pending">Pending</option>
+        <option value="overdue">Overdue</option>
+      </select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Registration No.</th>
+            <th>Book</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="issuedTable"></tbody>
+      </table>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/admin-issued.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-body {
+    min-height: 100vh;
+    background: var(--cream);
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 48% 52%;
+}
+
+
+/* =========================
+   LEFT VISUAL
+========================= */
+
+.auth-visual {
+    background: var(--black);
+    color: white;
+    padding: 40px 9%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-visual::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: 1px solid rgba(215, 184, 121, 0.15);
+    border-radius: 50%;
+    right: -220px;
+    top: 20%;
+}
+
+.auth-visual::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(215, 184, 121, 0.1);
+    border-radius: 50%;
+    right: -120px;
+    top: 30%;
+}
+
+.auth-logo {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.visual-content {
+    margin: auto 0;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.visual-content h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(45px, 5vw, 67px);
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 18px 0 25px;
+}
+
+.visual-content h1 em {
+    color: var(--gold-light);
+    font-style: italic;
+}
+
+.visual-content > p {
+    color: #aaa8a1;
+    line-height: 1.8;
+    font-size: 14px;
+    max-width: 430px;
+}
+
+
+/* =========================
+   QUOTE
+========================= */
+
+.visual-quote {
+    margin-top: 55px;
+    padding-left: 20px;
+    border-left: 1px solid var(--gold);
+}
+
+.visual-quote > span {
+    color: var(--gold-light);
+    font-family: Georgia, serif;
+    font-size: 45px;
+    line-height: 20px;
+}
+
+.visual-quote p {
+    color: #d2d0ca;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.visual-quote small {
+    color: #77756f;
+    font-size: 10px;
+    display: block;
+    margin-top: 9px;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefits div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.benefits span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(215, 184, 121, 0.15);
+    color: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.benefits p {
+    color: #b2afa7;
+    font-size: 12px;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.auth-bottom {
+    color: #66645f;
+    font-size: 10px;
+}
+
+
+/* =========================
+   FORM SIDE
+========================= */
+
+.auth-form-section {
+    background: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 9%;
+}
+
+.auth-form-container {
+    width: 100%;
+    max-width: 430px;
+}
+
+.form-heading {
+    margin-bottom: 35px;
+}
+
+.form-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin-top: 8px;
+}
+
+.form-heading p {
+    color: var(--gray);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.25s;
+}
+
+.form-group input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(181, 139, 74, 0.08);
+    background: white;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-row a {
+    color: var(--gold);
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 65px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.remember-row {
+    margin: 5px 0 23px;
+}
+
+.checkbox-label,
+.terms-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: var(--gray);
+    font-size: 11px;
+}
+
+.checkbox-label input,
+.terms-label input {
+    accent-color: var(--black);
+    margin-top: 2px;
+}
+
+.terms-label {
+    margin: 5px 0 22px;
+    line-height: 1.5;
+}
+
+.terms-label a {
+    color: var(--black);
+    font-weight: 600;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.auth-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background: var(--black);
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: #35342f;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 27px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    background: var(--border);
+    flex: 1;
+}
+
+.divider span {
+    color: #99958c;
+    font-size: 9px;
+}
+
+
+/* =========================
+   GOOGLE
+========================= */
+
+.google-btn {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-icon {
+    font-weight: 700;
+    color: #4285f4;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SWITCH
+========================= */
+
+.switch-auth {
+    text-align: center;
+    color: var(--gray);
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+.switch-auth a {
+    color: var(--black);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+.name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.register-container .form-heading {
+    margin-bottom: 27px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .auth-page {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-visual {
+        display: none;
+    }
+
+    .auth-form-section {
+        min-height: 100vh;
+        padding: 45px 7%;
+    }
+
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .form-heading h2 {
+        font-size: 35px;
+    }
+
+    .name-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}

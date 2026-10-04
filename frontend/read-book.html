@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Read E-book | Lumora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/read-book.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="reader-navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">L</span>
+            <span>Lumora</span>
+        </a>
+
+        <div class="reader-nav-center">
+            <span class="reader-label">READING MODE</span>
+            <span class="reader-book-title" id="navBookTitle">
+                E-book
+            </span>
+        </div>
+
+        <a href="explore.html" class="back-library">
+            ← Library
+        </a>
+
+    </nav>
+
+
+    <!-- READER HEADER -->
+
+    <section class="reader-header">
+
+        <div class="reader-heading">
+
+            <span class="eyebrow">
+                YOUR E-BOOK
+            </span>
+
+            <h1 id="bookTitle">
+                Loading book...
+            </h1>
+
+            <p id="bookAuthor">
+                Please wait
+            </p>
+
+        </div>
+
+
+        <div class="reader-actions">
+
+            <a
+                href="ebooks/sample-book.pdf"
+                target="_blank"
+                class="reader-btn secondary-btn"
+            >
+                Open PDF
+            </a>
+
+            <a
+                href="ebooks/sample-book.pdf"
+                download
+                class="reader-btn primary-btn"
+            >
+                Download
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- READER -->
+
+    <main class="reader-container">
+
+        <div class="reader-toolbar">
+
+            <div class="toolbar-left">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    Reading access granted
+                </span>
+
+            </div>
+
+
+            <div class="toolbar-right">
+
+                <span id="readingStatus">
+                    Your active book
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="pdf-container">
+
+            <iframe
+                id="pdfViewer"
+                src="ebooks/sample-book.pdf"
+                title="E-book reader"
+            ></iframe>
+
+        </div>
+
+    </main>
+
+
+    <!-- BOTTOM ACTION -->
+
+    <section class="reader-footer">
+
+        <div>
+
+            <span class="footer-label">
+                FINISHED READING?
+            </span>
+
+            <h2>
+                Return your e-book when you're done.
+            </h2>
+
+        </div>
+
+
+        <a href="#" id="returnBtn" class="return-btn">
+            Return Book →
+        </a>
+
+    </section>
+
+
+    <script src="js/read-book.js"></script>
+
+</body>
+
+</html>

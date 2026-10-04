@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Verify OTP | Lumora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/otp.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">L</span>
+            <span>Lumora</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="login.html" class="login-link">
+                Login
+            </a>
+
+            <a href="register.html" class="nav-btn">
+                Get Started
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="otp-page">
+
+        <section class="otp-card">
+
+            <div class="verification-icon">
+                ✓
+            </div>
+
+            <span class="eyebrow">
+                STEP 02
+            </span>
+
+            <h1>
+                Verify your
+                <span>access.</span>
+            </h1>
+
+            <p class="otp-description">
+
+                We've generated a one-time verification
+                code for your book request.
+
+            </p>
+
+
+            <!-- DEMO OTP -->
+
+            <div
+                id="demoOtp"
+                class="demo-otp"
+            >
+                Generating OTP...
+            </div>
+
+
+            <form id="otpForm">
+
+                <label for="otp">
+                    Enter 6-digit OTP
+                </label>
+
+                <input
+                    type="text"
+                    id="otp"
+                    maxlength="6"
+                    inputmode="numeric"
+                    placeholder="000000"
+                    autocomplete="one-time-code"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="verify-btn"
+                >
+                    Verify & Continue →
+                </button>
+
+            </form>
+
+
+            <div
+                id="otpMessage"
+                class="otp-message"
+            ></div>
+
+
+            <a
+                href="explore.html"
+                class="cancel-link"
+            >
+                Cancel and return to library
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/otp.js"></script>
+
+</body>
+
+</html>

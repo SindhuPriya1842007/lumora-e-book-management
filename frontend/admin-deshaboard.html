@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Lumora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="logo">
+            <span>L</span>
+            Lumora
+        </a>
+
+        <div class="admin-label">ADMIN PANEL</div>
+
+        <nav>
+            <a href="admin-dashboard.html" class="active">⌂ Dashboard</a>
+            <a href="admin-books.html">▣ Manage Books</a>
+            <a href="admin-users.html">♙ Users</a>
+            <a href="admin-issued.html">▤ Issued Books</a>
+            <a href="admin-returns.html">↩ Returns & Fines</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">← Student Library</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <span class="welcome-small">LUMORA ADMINISTRATION</span>
+                <h1>Dashboard</h1>
+            </div>
+
+            <div class="admin-profile">
+                <div class="avatar">A</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <span>Library Admin</span>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="hero">
+            <div>
+                <span>LIBRARY OVERVIEW</span>
+                <h2>Good day, Admin.</h2>
+                <p>
+                    Here's what's happening in your digital library today.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <span class="stat-icon">▣</span>
+                <p>Total Books</p>
+                <h3>6</h3>
+                <small>Books in library</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">✓</span>
+                <p>Available Books</p>
+                <h3>5</h3>
+                <small>Ready to issue</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">↗</span>
+                <p>Issued Books</p>
+                <h3>1</h3>
+                <small>Currently issued</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">♙</span>
+                <p>Registered Users</p>
+                <h3>12</h3>
+                <small>Active members</small>
+            </div>
+
+        </section>
+
+
+        <section class="content-grid">
+
+            <div class="panel">
+
+                <div class="panel-heading">
+                    <div>
+                        <span>RECENT ACTIVITY</span>
+                        <h2>Recent Issues</h2>
+                    </div>
+
+                    <a href="admin-issued.html">
+                        View all →
+                    </a>
+                </div>
+
+                <div class="activity">
+
+                    <div class="activity-row">
+                        <div class="book-mini">AC</div>
+
+                        <div>
+                            <strong>Atomic Habits</strong>
+                            <p>Priya Sharma · 04 Oct 2026</p>
+                        </div>
+
+                        <span class="status issued">
+                            Issued
+                        </span>
+                    </div>
+
+                    <div class="activity-row">
+                        <div class="book-mini">CC</div>
+
+                        <div>
+                            <strong>Clean Code</strong>
+                            <p>Rahul Kumar · 03 Oct 2026</p>
+                        </div>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+                    </div>
+
+                    <div class="activity-row">
+                        <div class="book-mini">IA</div>
+
+                        <div>
+                            <strong>The Alchemist</strong>
+                            <p>Ananya Rao · 02 Oct 2026</p>
+                        </div>
+
+                        <span class="status returned">
+                            Returned
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel quick-panel">
+
+                <div class="panel-heading">
+                    <div>
+                        <span>SHORTCUTS</span>
+                        <h2>Quick Actions</h2>
+                    </div>
+                </div>
+
+                <a href="admin-books.html" class="quick-action">
+                    <span>+</span>
+                    <div>
+                        <strong>Add new book</strong>
+                        <small>Add a title to the library</small>
+                    </div>
+                </a>
+
+                <a href="admin-books.html" class="quick-action">
+                    <span>▣</span>
+                    <div>
+                        <strong>Manage books</strong>
+                        <small>Edit availability and details</small>
+                    </div>
+                </a>
+
+                <a href="admin-users.html" class="quick-action">
+                    <span>♙</span>
+                    <div>
+                        <strong>View users</strong>
+                        <small>Check registered members</small>
+                    </div>
+                </a>
+
+                <a href="admin-returns.html" class="quick-action">
+                    <span>₹</span>
+                    <div>
+                        <strong>Check fines</strong>
+                        <small>Review overdue returns</small>
+                    </div>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

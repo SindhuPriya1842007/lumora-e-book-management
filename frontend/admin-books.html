@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Books | Lumora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/admin-books.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="logo">
+            <span>L</span>
+            Lumora
+        </a>
+
+        <div class="admin-label">ADMIN PANEL</div>
+
+        <nav>
+            <a href="admin-dashboard.html">⌂ Dashboard</a>
+            <a href="admin-books.html" class="active">▣ Manage Books</a>
+            <a href="admin-users.html">♙ Users</a>
+            <a href="admin-issued.html">▤ Issued Books</a>
+            <a href="admin-returns.html">↩ Returns & Fines</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">← Student Library</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <span class="small-label">
+                    LIBRARY MANAGEMENT
+                </span>
+
+                <h1>Manage Books</h1>
+            </div>
+
+            <button id="addBookBtn" class="add-btn">
+                + Add New Book
+            </button>
+
+        </header>
+
+
+        <section class="summary-row">
+
+            <div>
+                <strong id="totalBooks">6</strong>
+                <span>Total books</span>
+            </div>
+
+            <div>
+                <strong id="availableBooks">5</strong>
+                <span>Available</span>
+            </div>
+
+            <div>
+                <strong id="issuedBooks">1</strong>
+                <span>Currently issued</span>
+            </div>
+
+        </section>
+
+
+        <section class="toolbar">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search books, authors or categories..."
+                >
+            </div>
+
+            <select id="categoryFilter">
+
+                <option value="All">
+                    All categories
+                </option>
+
+                <option value="Fiction">
+                    Fiction
+                </option>
+
+                <option value="Technology">
+                    Technology
+                </option>
+
+                <option value="Finance">
+                    Finance
+                </option>
+
+                <option value="Self Growth">
+                    Self Growth
+                </option>
+
+            </select>
+
+        </section>
+
+
+        <section class="books-panel">
+
+            <div class="table-heading">
+                <h2>Library Collection</h2>
+
+                <span id="bookCount">
+                    6 books
+                </span>
+            </div>
+
+            <div id="booksList"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ADD BOOK MODAL -->
+
+<div id="bookModal" class="modal">
+
+    <div class="modal-box">
+
+        <button id="closeModal" class="close-btn">
+            ×
+        </button>
+
+        <span class="small-label">
+            LIBRARY COLLECTION
+        </span>
+
+        <h2>Add a new book</h2>
+
+        <p>
+            Add a title to the Lumora digital library.
+        </p>
+
+
+        <form id="bookForm">
+
+            <div class="form-row">
+
+                <div>
+                    <label>Book title</label>
+
+                    <input
+                        id="bookTitle"
+                        required
+                        placeholder="Enter book title"
+                    >
+                </div>
+
+                <div>
+                    <label>Author</label>
+
+                    <input
+                        id="bookAuthor"
+                        required
+                        placeholder="Enter author"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div>
+                    <label>Category</label>
+
+                    <select id="bookCategory">
+
+                        <option>Fiction</option>
+                        <option>Technology</option>
+                        <option>Finance</option>
+                        <option>Self Growth</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label>Copies</label>
+
+                    <input
+                        id="bookCopies"
+                        type="number"
+                        min="1"
+                        value="1"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <div>
+                <label>Description</label>
+
+                <textarea
+                    id="bookDescription"
+                    placeholder="Short description..."
+                ></textarea>
+            </div>
+
+
+            <button class="save-btn" type="submit">
+                Add Book →
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="js/admin-books.js"></script>
+
+</body>
+</html>

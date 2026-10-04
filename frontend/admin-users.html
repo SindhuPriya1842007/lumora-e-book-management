@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Users | Lumora Admin</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/admin-users.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="logo">
+            <span>L</span>
+            Lumora
+        </a>
+
+        <div class="admin-label">ADMIN PANEL</div>
+
+        <nav>
+            <a href="admin-dashboard.html">⌂ Dashboard</a>
+            <a href="admin-books.html">▣ Manage Books</a>
+            <a href="admin-users.html" class="active">♙ Users</a>
+            <a href="admin-issued.html">▤ Issued Books</a>
+            <a href="admin-returns.html">↩ Returns & Fines</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html">← Student Library</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <span class="small-label">MEMBER MANAGEMENT</span>
+                <h1>Users</h1>
+            </div>
+
+            <div class="user-total">
+                <strong id="userCount">0</strong>
+                <span>registered members</span>
+            </div>
+
+        </header>
+
+
+        <section class="intro">
+
+            <div>
+                <span>LIBRARY MEMBERS</span>
+
+                <h2>
+                    Know your readers.
+                </h2>
+
+                <p>
+                    View registered students and their library activity.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="toolbar">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by name or email..."
+                >
+            </div>
+
+        </section>
+
+
+        <section class="users-panel">
+
+            <div class="panel-heading">
+                <h2>Registered Users</h2>
+
+                <span id="resultCount">
+                    0 users
+                </span>
+            </div>
+
+            <div id="usersList"></div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/admin-users.js"></script>
+
+</body>
+</html>
