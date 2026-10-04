@@ -23,7 +23,7 @@ async function generateOTP() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/issues/${issueId}/send-otp`,
+            `https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api/issues/${issueId}/send-otp`,
             {
                 method: "POST"
             }
@@ -88,7 +88,7 @@ otpForm.addEventListener(
         try {
 
             const response = await fetch(
-                `http://localhost:5000/api/issues/${issueId}/verify-otp`,
+                `https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api/issues/${issueId}/verify-otp`,
                 {
                     method: "POST",
 

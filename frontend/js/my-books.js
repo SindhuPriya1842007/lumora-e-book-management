@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api";
 
 const booksContainer = document.getElementById("booksContainer");
 const bookCount = document.getElementById("bookCount");

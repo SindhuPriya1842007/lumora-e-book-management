@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const issueId = params.get("issueId");
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api";
 
 async function loadBook() {
     if (!issueId) {

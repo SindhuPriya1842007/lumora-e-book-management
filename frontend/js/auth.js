@@ -59,7 +59,7 @@ if (registerForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/register",
+                "https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api/register",
                 {
 
                     method: "POST",
@@ -136,7 +136,7 @@ if (loginForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/login",
+                "https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api/login",
                 {
 
                     method: "POST",

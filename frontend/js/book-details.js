@@ -31,7 +31,7 @@ async function loadBook() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/books/${bookId}`
+            `https://lumora-e-book-management-git-main-narsingsindhu-5850.vercel.app/api/books/${bookId}`
         );
 
 
